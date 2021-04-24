@@ -1,0 +1,351 @@
+* {
+    box-sizing: border-box;
+    cursor: url(../images/gold_pointer.cur), auto;
+}
+            
+.sinistram {
+    position: absolute;
+    left: 60px;
+}
+            
+.medium {
+    margin: auto;
+}
+            
+.dextram {
+    position: absolute;
+    right: 60px;
+}
+            
+html {
+    height: 100%;
+}
+            
+body {
+    background-attachment: fixed;
+    background-image: linear-gradient(to bottom, grey, #181818, black);
+    background-repeat: no-repeat;
+    font-family: "Arial";
+    font-size: 1.464vw;
+    height: 100%;
+    margin: 0;
+    overflow-x: hidden;
+                
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+            
+body::-webkit-scrollbar {
+    display: none;
+}
+                        
+#title {
+    border: 5px solid goldenrod;
+    box-shadow: 10px 10px black;
+    display: block;
+    margin: 25px auto;
+    width: 40%;
+}
+            
+#topDecor {
+    background-color: black;
+    border: 3px dashed goldenrod; 
+    display: block;
+    margin: 20px auto;
+    overflow-x: hidden;    
+    width: 1300px;
+            
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+            
+#topDecor_content {
+    border-top: 2px dashed grey;
+    border-bottom: 2px dashed grey;
+    color: white;
+    font-family: "Courier New", monospace;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 7px 0;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    width: 6500px;
+                
+    animation: gibberish;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    position: relative;
+}
+            
+@keyframes gibberish {
+    from {right: 0px;}
+    to {right: 5200px;}
+}
+            
+#topDecor_spacing {
+    margin-left: 3%;
+}
+
+.section_titles {
+    color: white;
+    font-size: 2.196vw;
+    font-weight: bold; 
+    text-align: center;
+    text-shadow: 
+        -2px -2px 0 black, 
+        2px -2px 0 black, 
+        -2px 2px 0 black, 
+        2px 2px 0 black, 
+        -3px 0 0 black, 
+        3px 0 0 black, 
+        0 3px 0 black, 
+        0 -3px 0 black;
+}
+
+.social_media {
+    position: absolute;
+    margin-top: 5%;
+    right: 3%;
+    width: 25%;
+}
+            
+.social_media_image {
+    border: 5px solid black;
+    border-radius: 15px;
+    margin: 5% 0 0 5%;
+    width: 25%;
+    box-shadow:
+        -3px -3px 0 deeppink,
+        3px -3px 0 deeppink, 
+        -3px 3px 0 deeppink, 
+        3px 3px 0 deeppink,
+        -4px 0 0 deeppink, 
+        4px 0 0 deeppink, 
+        0 4px 0 deeppink, 
+        0 -4px 0 deeppink;
+    
+    transition: 0.3s;
+}
+
+.social_media_image:hover {
+    border-color: white;
+    transform: translateY(5px);
+}
+            
+.social_media_text {
+    color: deeppink;
+    font-weight: bold;
+    font-size: 1.8vw;
+    margin-top: 10px;
+    text-align: center;
+    text-shadow: 
+        -2px -2px 0 black, 
+        2px -2px 0 black, 
+        -2px 2px 0 black, 
+        2px 2px 0 black, 
+        -3px 0 0 black, 
+        3px 0 0 black, 
+        0 3px 0 black, 
+        0 -3px 0 black;
+}
+
+.corner_decor {
+    position: absolute;
+    margin-top: 5%;
+    left: 3%;
+    width: 25%;
+}
+
+.corner_image {
+    border: 5px solid black;
+    border-radius: 15px;
+    margin: 5% 0 0 5%;
+    width: 25%;
+    box-shadow:
+        -3px -3px 0 darkgrey,
+        3px -3px 0 darkgrey, 
+        -3px 3px 0 darkgrey, 
+        3px 3px 0 darkgrey,
+        -4px 0 0 darkgrey, 
+        4px 0 0 darkgrey, 
+        0 4px 0 darkgrey, 
+        0 -4px 0 darkgrey;
+}
+
+.corner_text {
+    color: darkgrey;
+    font-weight: bold;
+    font-size: 1.8vw;
+    margin-top: 10px;
+    text-align: center;
+    text-shadow: 
+        -2px -2px 0 black, 
+        2px -2px 0 black, 
+        -2px 2px 0 black, 
+        2px 2px 0 black, 
+        -3px 0 0 black, 
+        3px 0 0 black, 
+        0 3px 0 black, 
+        0 -3px 0 black;
+}
+
+.black_screen {
+    background-color: black;
+    margin-top: -25px;
+    position: fixed;
+    height: 200%;
+    width: 100%;
+    z-index: 1;
+    
+    animation: no_height 0.5s 0.5s 1 forwards;
+}
+
+@keyframes no_height {
+    from {
+        height: 100%; 
+        opacity: 1;
+    }
+    to {
+        height: 0%; 
+        opacity: 0;
+    }
+}
+
+a:link {
+    color: white;
+    display: block;
+    text-decoration: none;
+}
+            
+a:visited {
+    color: white;
+    display: block;
+    text-decoration: none;
+}
+
+#inlined {
+    display: inline;
+}
+      
+/* Exclusive To The Menu */
+
+.sections {
+    background: darkgrey;
+    border: 5px solid black;
+    box-shadow: 10px 10px black;
+    margin-bottom: 2%;
+    overflow-y: hidden;
+    width: 60%;
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: none;
+
+    transition: 0.3s;
+}
+
+.sections:hover {
+    border: 5px solid white;
+    box-shadow: 5px 5px black;
+    transform: translateY(5px);
+}
+
+#thumbnails {
+    border: 5px solid black;
+    float: left;
+    margin: 1%;
+    width: 20%;
+}
+
+#section_info {
+    color: black;
+    padding: 7.45% 0;
+    text-align: center; 
+}     
+
+.copyright {
+    color: white;
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+    padding-bottom: 15px;
+    text-align: center;
+    width: 100%;
+}
+
+/* Exclusive To Comic Pages */
+
+.nav_button {
+    background-color: black;
+    border: 3px solid goldenrod;
+    box-shadow: 10px 10px black;
+    color: white;
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+    margin-bottom: 1%;
+    text-align: center;
+    width: 8%;
+    transition: 0.3s;
+}
+
+.nav_button:hover {
+    border-color: white;
+    box-shadow: 5px 5px black;
+    display: block;
+    transform: translateY(5px);
+}
+
+.comic {
+    margin: auto;
+    width: 80%;
+    overflow-y: auto;
+}
+
+.panel_left {
+    border: 5px solid black;
+    margin-top: 1%;
+    width: 49%;
+}
+
+.panel_right {
+    border: 5px solid black;
+    float: right;
+    margin-top: 1%;
+    width: 49%;
+}
+
+/* Exclusive To "Context" */
+
+.context {
+    background: #080808;
+    border: 3px dashed darkgrey;
+    clear: right;
+    color: deeppink;
+    font-family: "Arial";
+    font-size: 1.3vw;
+    font-weight: bold;
+    float: right;
+    line-height: 150%;
+    overflow-y: auto;
+    padding: 2%;
+    margin-top: 1%;
+    width: 49%;
+}
+
+/* Exclusive To "Sources" */
+
+.sources {
+    background: #080808;
+    border: 3px dashed darkgrey;
+    clear: right;
+    color: darkgrey;
+    font-family: "Arial";
+    font-size: 1.3vw;
+    font-weight: bold;
+    line-height: 150%;
+    margin: 20px auto;
+    padding: 2%;
+    text-align: center;
+    width: 95%;
+}
